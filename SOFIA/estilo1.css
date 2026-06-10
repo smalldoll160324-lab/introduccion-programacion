@@ -1,0 +1,15 @@
+.boton{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: lightslategray;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: cursive;
+}
+.boton:hover{
+    background-color: blue;
+    color: azure;
+}
+.boton{
+    display:inline-block;
+}

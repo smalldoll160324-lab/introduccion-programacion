@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.perfil {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    border: 1px solid #05cdff;
+    border-radius: 10px;
+    max-width: 600px;
+}
+
+.foto {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    animation: girarEntrada 1s ease-out;
+}
+
+@keyframes girarEntrada {
+    from {
+        transform: rotate(-360deg) scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: rotate(0deg) scale(1);
+        opacity: 1;
+    }
+}
+
+.datos {
+    flex: 1;
+}
+
+@media (max-width: 600px) {
+    .perfil {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+.foto-boton {
+    display: inline-block;
+    transition: transform 0.2s;
+}
+
+.foto-boton:hover {
+    transform: scale(1.05);
+}
